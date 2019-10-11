@@ -1,0 +1,23 @@
+{
+  "name": "pdf-creator",
+  "private": true,
+  "description": "Creates PDFs",
+  "keywords": [
+    "pdf",
+    "creator"
+  ],
+  "author": "Kennedy Rose <kennedyianrose@gmail.com>",
+  "homepage": "https://github.com/smarterlabs/labs#readme",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smarterlabs/labs.git",
+    "directory": "packages/pdf-creator"
+  },
+  "scripts": {
+    "build": ""
+  },
+  "bugs": {
+    "url": "https://github.com/smarterlabs/labs/issues"
+  }
+}
