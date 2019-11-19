@@ -1,8 +1,9 @@
 const {
 	SANITY_READ_TOKEN,
-	CLOUDINARY_API_KEY,
-	CLOUDINARY_API_SECRET,
-	CLOUDINARY_NAME,
+	STRIPE_SECRET_KEY,
+	// CLOUDINARY_API_KEY,
+	// CLOUDINARY_API_SECRET,
+	// CLOUDINARY_NAME,
 } = process.env
 const proxy = require(`http-proxy-middleware`)
 const { parse: parseUrl } = require(`url`)
@@ -28,13 +29,19 @@ module.exports = {
 		`products`,
 		`accounts`,
 		{
-			resolve: `@smarterlabs/gatsby-source-cloudinary`,
+			resolve: `@smarterlabs/gatsby-plugin-stripe-priceline`,
 			options: {
-				apiKey: CLOUDINARY_API_KEY,
-				apiSecret: CLOUDINARY_API_SECRET,
-				cloudName: CLOUDINARY_NAME,
+				stripeSecretKey: STRIPE_SECRET_KEY,
 			},
 		},
+		// {
+		// 	resolve: `@smarterlabs/gatsby-source-cloudinary`,
+		// 	options: {
+		// 		apiKey: CLOUDINARY_API_KEY,
+		// 		apiSecret: CLOUDINARY_API_SECRET,
+		// 		cloudName: CLOUDINARY_NAME,
+		// 	},
+		// },
 		// {
 		// 	resolve: `@smarterlabs/gatsby-plugin-browser-dependencies`,
 		// 	option: {
