@@ -1,5 +1,6 @@
 const {
 	SANITY_READ_TOKEN,
+	// STRIPE_SECRET_KEY,
 	// CLOUDINARY_API_KEY,
 	// CLOUDINARY_API_SECRET,
 	// CLOUDINARY_NAME,
@@ -27,6 +28,12 @@ module.exports = {
 		`generic-pages`,
 		`products`,
 		`accounts`,
+		// {
+		// 	resolve: `@smarterlabs/gatsby-plugin-stripe-priceline`,
+		// 	options: {
+		// 		stripeSecretKey: STRIPE_SECRET_KEY,
+		// 	},
+		// },
 		// {
 		// 	resolve: `@smarterlabs/gatsby-source-cloudinary`,
 		// 	options: {
