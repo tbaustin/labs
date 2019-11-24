@@ -108,6 +108,9 @@ export const query = graphql`
 						fluid(maxWidth: 700) {
 							...GatsbySanityImageFluid
 						}
+						thumbnail: fluid(maxWidth: 150){
+							src
+						}
 					}
 				}
 			}
