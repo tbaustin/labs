@@ -28,6 +28,7 @@ module.exports = {
 		`generic-pages`,
 		`products`,
 		`accounts`,
+		`cms-redirects`,
 		// {
 		// 	resolve: `@smarterlabs/gatsby-plugin-stripe-priceline`,
 		// 	options: {

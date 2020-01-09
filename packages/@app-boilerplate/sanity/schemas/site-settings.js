@@ -37,5 +37,11 @@ export default {
 			title: `Contact Email`,
 			type: `string`,
 		},
+		{
+			name: `redirects`,
+			title: `Redirects`,
+			type:  `array`,
+			of: [{ type: `redirect` }],
+		},
 	],
 }

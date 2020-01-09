@@ -10,6 +10,7 @@ import post from './post'
 import page from './page'
 import comment from './comment'
 import location from './location'
+import redirect from './redirect'
 import siteSettings from './site-settings'
 
 import blockContent from './block-content'
@@ -40,5 +41,6 @@ export default createSchema({
 		productVariant,
 		captionedImage,
 		widget,
+		redirect,
 	]),
 })
