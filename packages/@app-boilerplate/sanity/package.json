@@ -12,16 +12,18 @@
     "deploy:production": "sanity graphql deploy --no-playground && sanity deploy",
     "dev": "sanity start",
     "test": "sanity check",
+		"up": "sanity upgrade",
+		"sanlog": "sanity login",
     "open": "open-cli https://project-boilerplate.sanity.studio/"
   },
   "dependencies": {
-    "@sanity/base": "^0.142.2",
-    "@sanity/components": "^0.142.4",
-    "@sanity/core": "^0.142.4",
-    "@sanity/dashboard": "^0.142.2",
-    "@sanity/default-layout": "^0.142.4",
-    "@sanity/default-login": "^0.142.3",
-    "@sanity/desk-tool": "^0.142.4",
+    "@sanity/base": "^0.147.6",
+    "@sanity/components": "^0.147.6",
+    "@sanity/core": "^0.147.6",
+    "@sanity/dashboard": "^0.147.6",
+    "@sanity/default-layout": "^0.147.6",
+    "@sanity/default-login": "^0.147.0",
+    "@sanity/desk-tool": "^0.147.7",
     "moment": "^2.24.0",
     "prop-types": "^15.6",
     "react": "^16.2",
@@ -31,7 +33,7 @@
     "slugify": "^1.3.4"
   },
   "devDependencies": {
-    "@sanity/cli": "^0.142.2",
+    "@sanity/cli": "^0.147.3",
     "fs-extra": "^8.1.0"
   }
 }
